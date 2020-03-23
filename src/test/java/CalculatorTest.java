@@ -9,26 +9,26 @@ public class CalculatorTest {
 
     @Before
     public void before() {
-        calculator = new Calculator(8,6);
+        calculator = new Calculator();
     }
 
     @Test
     public void testAdd() {
-        assertEquals(14, calculator.Add());
+        assertEquals(14, calculator.Add(8,6));
     }
 
     @Test
     public void testSubtract() {
-        assertEquals(2, calculator.Subtract());
+        assertEquals(2, calculator.Subtract(8,6));
     }
 
     @Test
     public void testMultiply() {
-        assertEquals(48, calculator.Multiply());
+        assertEquals(48, calculator.Multiply(8,6));
     }
 
     @Test
     public void testDivide() {
-        assertEquals(1, calculator.Divide());
+        assertEquals(1, calculator.Divide(8,6));
     }
 }
